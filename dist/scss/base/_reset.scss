@@ -1,6 +1,22 @@
+@use "sass:meta";
+
 *,*::before,*::after{
     box-sizing: border-box;
 }
 body{
     margin: 0;
+}
+body.light{
+    --background:#{meta.inspect($white)};
+    --top-background-pattern:#{meta.inspect($very-pale-blue)};
+    --card-background:#{meta.inspect($light-grayish-blue)};
+    --text:#{meta.inspect($dark-grayish-blue)};
+    --text2:#{meta.inspect($very-dark-blue-light)};
+}
+body.dark{
+    --background:#{meta.inspect($very-dark-blue)};
+    --top-background-pattern:#{meta.inspect($very-dark-blue2)};
+    --card-background:#{meta.inspect($dark-desaturated-blue)};
+    --text:#{meta.inspect($desaturated-blue)};
+    --text2:#{meta.inspect($white)};
 }

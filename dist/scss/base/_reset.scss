@@ -7,6 +7,7 @@ body{
     margin: 0;
 }
 body.light{
+    --toggle:#{meta.inspect($toggle-light)};
     --background:#{meta.inspect($white)};
     --top-background-pattern:#{meta.inspect($very-pale-blue)};
     --card-background:#{meta.inspect($light-grayish-blue)};
@@ -14,6 +15,7 @@ body.light{
     --text2:#{meta.inspect($very-dark-blue-light)};
 }
 body.dark{
+    --toggle:#{meta.inspect($toggle-dark)};
     --background:#{meta.inspect($very-dark-blue)};
     --top-background-pattern:#{meta.inspect($very-dark-blue2)};
     --card-background:#{meta.inspect($dark-desaturated-blue)};

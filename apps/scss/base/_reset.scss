@@ -1,8 +1,10 @@
-@use "sass:meta";
-
 *,*::before,*::after{
     box-sizing: border-box;
 }
 body{
+    background-color: var(--background);
+    color: var(--text);
     margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-size);
 }

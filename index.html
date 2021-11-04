@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <meta name="color-scheme" content="light dark">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/dist/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="dist/css/main.min.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,75 +17,99 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
+<body class="light">
+<div class="container">
+  <header class="header">
+    <h1 class="header__title">Social Media Dashboard</h1>
+    <p class="header__follow bold">Total Followers: 23,004</p>
+    <hr>
+    <div class="header__theme">
+      <p class="header__theme--mode bold">Dark Mode</p>
+      <button id="theme-toggle">Obligatory fake button</button>
+      </div>
+    </header>
+    
   
+    
+  <main class="main">
+    <section class="main__block main__block--facebook">
+      <span class="main__block--user"><img src="images/icon-facebook.svg" alt=""><p>@nathanf</p></span>
+      <h2>1987</h2>
+      <p class="main__block--follow">Followers</p>
+      <p class="main__block--change up">12 Today</p>
+    
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+    </section>
+    <section class="main__block main__block--twitter">
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <span class="main__block--user"><img src="images/icon-twitter.svg" alt=""><p>@nathanf</p></span>
+      <h2>1044</h2>
+      <p class="main__block--follow">Followers</p>
+      <p class="main__block--change up">99 Today</p>
+    
+    </section>
+    <section class="main__block main__block--insta">
+      
+      <span class="main__block--user"><img src="images/icon-instagram.svg" alt=""><p>@realnathanf</p></span>
+      <h2>11k</h2>
+      <p class="main__block--follow">Followers</p>
+      <p class="main__block--change up">1099 Today</p>
+    
+      
+    </section>
+    <section class="main__block main__block--youtube">
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
+      <span class="main__block--user"><img src="images/icon-youtube.svg" alt=""><p>Nathan F.</p></span>
+      <h2>8239</h2>
+      <p class="main__block--follow">Subscribers</p>
+      <p class="main__block--change down">144 Today</p>
+    
+    </section>
+      
+  </main>
   
+  
+    <footer class="footer">
+      Overview - Today
+    
+      Page Views
+      87
+      3%
+    
+      Likes
+      52
+      2%
+    
+      Likes
+      5462
+      2257%
+    
+      Profile Views
+      52k
+      1375%
+    
+      Retweets
+      117
+      303%
+    
+      Likes
+      507
+      553%
+    
+      Likes
+      107
+      19%
+    
+      Total Views
+      1407
+      12%
+      
+    </footer>
+</div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
-  <script src="script.js"></script>
+  <script src="dist/script.min.js"></script>
 </body>
 </html>

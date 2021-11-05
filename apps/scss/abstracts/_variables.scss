@@ -9,7 +9,12 @@
 
 // - Mobile: 375px
 // - Desktop: 1440px
-$desktop:em(800);
+$desktop:(
+  "tablet":50em,
+  "pc":87.5em
+);
+//em(800);
+
 // ## Colors
 
 // ### Primary
@@ -70,6 +75,8 @@ $weights:(
   --instagram:#{meta.inspect($instagram)};
   --youtube:#{meta.inspect($youtube)};
   --font-size:#{meta.inspect($font-size)};
+
+
 }
 
 

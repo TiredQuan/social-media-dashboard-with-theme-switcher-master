@@ -24,7 +24,6 @@
             font-size: rem(14);
         }
     }
-<<<<<<< HEAD
     @media screen and(min-width:map-get($desktop,tablet)) {
         hr{
             display: none;
@@ -38,9 +37,6 @@
     }
 }
 
-=======
-}
->>>>>>> cb1301a02e74d8620330d7519b412497e4601047
 .header::after{
     content: "";
     background-color: var(--top-background-pattern);
@@ -69,7 +65,6 @@
 .main__block--insta::after{background: var(--instagram);}
 .main__block--youtube::after{background-color:var(--youtube)}
 .main{
-<<<<<<< HEAD
     display: grid;
     grid-template-rows: repeat(4,rem(215)) ;
     gap:30px;
@@ -83,8 +78,6 @@
         grid-template-columns: repeat(4,rem(325));
         
     }
-=======
->>>>>>> cb1301a02e74d8620330d7519b412497e4601047
     &__block{
         background-color: var(--card-background);
         // background-color: black;
@@ -92,11 +85,7 @@
         position: relative;
         height: rem(216);
         width: rem(325);
-<<<<<<< HEAD
         margin: 0 auto;
-=======
-        margin: 0 auto rem(24);
->>>>>>> cb1301a02e74d8620330d7519b412497e4601047
         text-align: center;
         padding-top: rem(30);
 

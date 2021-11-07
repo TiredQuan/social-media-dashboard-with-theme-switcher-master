@@ -70,6 +70,7 @@
     gap:30px;
     justify-content: center;
     @media screen and(min-width:map-get($desktop, tablet )){
+        grid-template-rows: repeat(2,rem(215)) ;
         grid-template-columns: repeat(2,rem(325));
         margin: 0 auto;}
     @media screen and(min-width:map-get($desktop, pc )){
@@ -84,7 +85,14 @@
         margin: 0 auto;
         text-align: center;
         padding-top: rem(30);
-
+        &--change{
+            font-size: rem(12);
+            font-weight: map-get($weights, bold );
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         &--user{
             font-weight: map-get($weights, bold );
             font-size: rem(12);
@@ -107,3 +115,15 @@
         }
     }
 }
+.main__block--change::before{
+    content: '';
+    background: center/cover no-repeat;
+    display: inline-block;
+    height: 4px;
+    width: 8px;
+    margin-right:5px;
+}
+.up{color: var(--lime-green);}
+.up::before{background-image: url(../../images/icon-up.svg);}
+.down{color: var(--bright-red);}
+.down::before{background-image: url(../../images/icon-down.svg);}

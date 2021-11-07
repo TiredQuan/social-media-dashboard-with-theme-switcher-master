@@ -10,7 +10,7 @@
     margin: rem(40) auto;
     width: 325px;
     @media screen and(min-width:map-get($desktop,tablet)) {width:680px}
-    @media screen and(min-width:map-get($desktop,pc)){width:1390px}
+    @media screen and(min-width:map-get($desktop,pc)){width:1114px}
 }
 
 .bold{font-weight: map-get($weights, bold );}
@@ -80,18 +80,10 @@
     grid-template-rows: repeat(4,rem(215)) ;
     gap:30px;
     justify-content: center;
-    @media screen and(min-width:map-get($desktop, tablet )){
-        grid-template-rows: repeat(2,rem(215)) ;
-        grid-template-columns: repeat(2,rem(325));
-        margin: 0 auto;}
-    @media screen and(min-width:map-get($desktop, pc )){
-        grid-template-rows: rem(215) ;
-        grid-template-columns: repeat(4,rem(325));}
     &__block{
         background-color: var(--card-background);
         border-radius:rem(7);
         position: relative;
-        height: rem(216);
         width: rem(325);
         margin: 0 auto;
         text-align: center;
@@ -124,6 +116,17 @@
             margin-bottom: rem(20);
         }
     }
+    @media screen and(min-width:map-get($desktop, tablet )){
+        grid-template-rows: repeat(2,rem(215)) ;
+        grid-template-columns: repeat(2,rem(325));
+        margin: 0 auto;}
+    @media screen and(min-width:map-get($desktop, pc )){
+        grid-template-rows: rem(215) ;
+        grid-template-columns: repeat(4,rem(256));
+    &__block{
+        width: rem(256);
+        }
+    }
 }
 .main__block--change::before,.footer__block--change::before{
     content: '';
@@ -151,13 +154,6 @@
     grid-template-rows: repeat(8,rem(125));
     gap: rem(15);
     justify-content: center;
-    @media screen and(min-width:map-get($desktop,tablet)){
-        grid-template-columns: repeat(2,rem(325));
-        grid-template-rows: repeat(3,rem(125));
-        gap: rem(30);}
-        @media screen and(min-width:map-get($desktop,pc)){
-            grid-template-columns: repeat(4,rem(325));
-            grid-template-rows: repeat(2,rem(125));}
     &__overview{
         margin: 20px 0;
         font-size: rem(25);
@@ -167,7 +163,6 @@
         background-color: var(--card-background);
         border-radius:rem(7);
         position: relative;
-        height: rem(125);
         width: rem(325);
         margin: 0 auto;
         padding: rem(25);
@@ -197,6 +192,16 @@
             align-items: center;
         }
     }
+    @media screen and(min-width:map-get($desktop,tablet)){
+        grid-template-columns: repeat(2,rem(325));
+        grid-template-rows: repeat(3,rem(125));
+        gap: rem(30);}
+        @media screen and(min-width:map-get($desktop,pc)){
+            grid-template-columns: repeat(4,rem(256));
+            grid-template-rows: repeat(2,rem(125));
+        &__block{
+            width: rem(256);
+        }}
 }
 .footer__block--name::after{
     content: '';

@@ -58,7 +58,7 @@
     background-color: var(--card-background-clicked);
 }
 .main__block{
-    transition: background-color 0.1s;
+    transition: background-color 0.3s;
 }
 .main__block::after{
     content: '';
@@ -139,7 +139,7 @@
 .down::before{background-image: url(../../images/icon-down.svg);}
 
 .footer__block{
-    transition: background-color 0.1s;
+    transition: background-color 0.3s;
 }
 .footer__block:hover{
     background-color: var(--card-background-clicked);

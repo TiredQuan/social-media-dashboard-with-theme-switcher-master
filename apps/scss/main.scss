@@ -78,7 +78,7 @@
         grid-template-columns: repeat(4,rem(325));}
     &__block{
         background-color: var(--card-background);
-        border-radius:rem(7) rem(7) rem(7) rem(7);
+        border-radius:rem(7);
         position: relative;
         height: rem(216);
         width: rem(325);
@@ -127,3 +127,33 @@
 .up::before{background-image: url(../../images/icon-up.svg);}
 .down{color: var(--bright-red);}
 .down::before{background-image: url(../../images/icon-down.svg);}
+
+.footer{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: rem(325);
+    grid-template-rows: repeat(8,rem(125));
+    gap: rem(17);
+    justify-content: center;
+    @media screen and(min-width:map-get($desktop,tablet)){
+        grid-template-columns: repeat(2,rem(325));
+        grid-template-rows: repeat(3,rem(125));}
+        @media screen and(min-width:map-get($desktop,pc)){
+            grid-template-columns: repeat(4,rem(325));}
+            grid-template-rows: repeat(2,rem(125));
+            gap: rem(30);
+    &__overview{
+        margin: 20px 0;
+        font-size: rem(25);
+        color: var(--text1);
+    }
+    &__block{
+        background-color: var(--card-background);
+        border-radius:rem(7);
+        position: relative;
+        height: rem(125);
+        width: rem(325);
+        margin: 0 auto;
+        padding-top: rem(30);
+    }
+}

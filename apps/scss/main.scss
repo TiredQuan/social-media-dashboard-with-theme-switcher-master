@@ -9,6 +9,7 @@
 .container{
     margin: rem(40) auto;
     width: 325px;
+    transition: 0.5s;
     @media screen and(min-width:map-get($desktop,tablet)) {width:680px}
     @media screen and(min-width:map-get($desktop,pc)){width:1114px}
 }
@@ -58,7 +59,7 @@
     background-color: var(--card-background-clicked);
 }
 .main__block{
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .main__block::after{
     content: '';
@@ -143,7 +144,7 @@
 .down::before{background-image: url(../../images/icon-down.svg);}
 
 .footer__block{
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .footer__block:hover{
     background-color: var(--card-background-clicked);

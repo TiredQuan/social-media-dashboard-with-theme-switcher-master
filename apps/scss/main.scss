@@ -71,16 +71,12 @@
     justify-content: center;
     @media screen and(min-width:map-get($desktop, tablet )){
         grid-template-columns: repeat(2,rem(325));
-        margin: 0 auto;
-    }
+        margin: 0 auto;}
     @media screen and(min-width:map-get($desktop, pc )){
         grid-template-rows: rem(215) ;
-        grid-template-columns: repeat(4,rem(325));
-        
-    }
+        grid-template-columns: repeat(4,rem(325));}
     &__block{
         background-color: var(--card-background);
-        // background-color: black;
         border-radius:rem(7) rem(7) rem(7) rem(7);
         position: relative;
         height: rem(216);

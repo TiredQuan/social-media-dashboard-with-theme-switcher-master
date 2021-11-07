@@ -85,6 +85,7 @@ $weights:(
 
 body.light{
     --toggle:#{meta.inspect($toggle-light)};
+    --toggle-hover:#{meta.inspect($toggle-dark)};
     --background:#{meta.inspect($white)};
     --top-background-pattern:#{meta.inspect($very-pale-blue)};
     --card-background:#{meta.inspect($light-grayish-blue)};

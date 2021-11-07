@@ -42,6 +42,7 @@ $toggle-light: hsl(230, 22%, 74%);
 $very-dark-blue : hsl(230, 17%, 14%); //(BG)
 $very-dark-blue2 : hsl(232, 19%, 15%); //(Top BG Pattern)
 $dark-desaturated-blue : hsl(228, 28%, 20%); //(Card BG)
+$dark-desaturated-blue-clicked : hsl(228, 28%, 30%); //(Card BG)
 $desaturated-blue : hsl(228, 34%, 66%); //(Text)
 $white : hsl(0, 0%, 100%); //(Text)
 
@@ -50,6 +51,7 @@ $white : hsl(0, 0%, 100%); //(Text)
 $white : hsl(0, 0%, 100%);//(BG)
 $very-pale-blue : hsl(225, 100%, 98%);//(Top BG Pattern)
 $light-grayish-blue : hsl(227, 47%, 96%);//(Card BG)
+$light-grayish-blue-clicked : hsl(227, 47%, 90%);//(Card BG)
 $dark-grayish-blue : hsl(228, 12%, 44%);//(Text)
 $very-dark-blue-light : hsl(230, 17%, 14%);//(text)
 // ## Typography
@@ -86,6 +88,7 @@ body.light{
     --background:#{meta.inspect($white)};
     --top-background-pattern:#{meta.inspect($very-pale-blue)};
     --card-background:#{meta.inspect($light-grayish-blue)};
+    --card-background-clicked:#{meta.inspect($light-grayish-blue-clicked)};
     --text:#{meta.inspect($dark-grayish-blue)};
     --text2:#{meta.inspect($very-dark-blue-light)};
 }
@@ -94,6 +97,7 @@ body.dark{
     --background:#{meta.inspect($very-dark-blue)};
     --top-background-pattern:#{meta.inspect($very-dark-blue2)};
     --card-background:#{meta.inspect($dark-desaturated-blue)};
+    --card-background-clicked:#{meta.inspect($dark-desaturated-blue-clicked)};
     --text:#{meta.inspect($desaturated-blue)};
     --text2:#{meta.inspect($white)};
 }

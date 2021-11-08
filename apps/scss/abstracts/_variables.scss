@@ -90,6 +90,7 @@ body.light{
     --top-background-pattern:#{meta.inspect($very-pale-blue)};
     --card-background:#{meta.inspect($light-grayish-blue)};
     --card-background-clicked:#{meta.inspect($light-grayish-blue-clicked)};
+    --toggle-clicked:#{meta.inspect($light-grayish-blue)};
     --text:#{meta.inspect($dark-grayish-blue)};
     --text2:#{meta.inspect($very-dark-blue-light)};
 }
@@ -99,6 +100,7 @@ body.dark{
     --top-background-pattern:#{meta.inspect($very-dark-blue2)};
     --card-background:#{meta.inspect($dark-desaturated-blue)};
     --card-background-clicked:#{meta.inspect($dark-desaturated-blue-clicked)};
+    --toggle-clicked:#{meta.inspect($dark-desaturated-blue-clicked)};
     --text:#{meta.inspect($desaturated-blue)};
     --text2:#{meta.inspect($white)};
 }

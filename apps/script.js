@@ -36,4 +36,3 @@ toggle.addEventListener('input', (e) => {
 		body.classList.add('dark');
 	}
 });
-//Credit to Ayc0 for the dark theme articles in dev.to 
